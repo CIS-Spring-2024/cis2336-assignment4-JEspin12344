@@ -1,0 +1,297 @@
+<html>
+    <title>UH interlude Cafe Menu</title>
+    <head>
+        <style>
+            body
+            {
+                font-family:Arial, Helvetica, sans-serif;
+                line-height: 1.6;
+                color: black;
+                background-color:rgb(249, 250, 253);
+                padding:20px;
+            }
+            header
+            {
+                background-color:rgba(200, 17, 24, 0.87);
+                color:white;
+                padding: 5px 0;
+                text-align:center;
+                margin: 0;
+                font-family:'arial';
+                font-size: 20px;
+                padding-right:240px;
+            }
+            nav ul li
+            {
+                display: inline;
+                margin-right: 20px;
+            }
+            nav a
+            {
+                color:white;
+                text-decoration: none;
+            }
+            a:hover
+            {
+                color:rgba(200, 17, 24, 0.87);
+            }
+            div
+            {
+                background-color:rgb(224, 213, 213);
+                padding: 9px;
+            }
+            .uhlogo
+            {
+                width:250px;
+                height:120px;
+                position: relative;
+                float:left;
+            }
+            a
+            {
+                text-decoration: none;
+                color:black;
+                padding: 10px;
+            }
+            .footer
+            {
+                position: fixed;  
+                left: 10px;  
+                bottom: 5px;  
+                right: 10px;   
+                width: 95%;  
+                background-color:blue;  
+                color:blue;  
+                text-align: center; 
+            }
+
+        </style>
+    </head>
+    <body>
+       <header>
+           <img src="../images/uhlogo.jpg" class="uhlogo">
+           <h1> Interlude Cafe </h1>
+       </header>
+       <div class="topnav">
+        <a href="uhinterludecafe.html">Home</a>
+        <a href="uhinterludecafeaboutus.html">About Us</a>
+        <a href="uhinterludemenu.html">Menu</a>
+        <a href="uhinterludecontactus.html">Contact Us</a>
+        
+       </div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+          .bgimage
+          {
+            width:1463px;
+            height:500px;
+            opacity:0.4;
+          }
+          h2
+          {
+            text-align:center;
+            position:relative;
+            top:-350px;
+            font-size:70px;
+            color:rgba(200, 17, 24, 0.87);
+          }
+          h3
+          {
+            text-align:center;
+            position:relative;
+            top:-400px;
+            font-size:25px;
+            color:rgba(200, 17, 24, 0.87);
+          }
+          .bttn
+          {
+            text-align:center;
+            position:relative;
+            top:-300px;
+            background-color:white;
+          }
+          h4
+          {
+            color:rgba(200, 17, 24, 0.87);
+            position:relative;
+            top:-200px;
+            font-size:30px;
+          }
+          .p
+          {
+            color:black;
+            font-size:20px;
+          }
+          .images
+          {
+            width:300px;
+            height:200px;
+            /*all images have the same class name because I wanted them to be the same size*/
+          }
+          .footer
+          {
+            background-color:rgba(200, 17, 24, 0.87);
+            position:relative;
+            height:30px;
+          }
+          #div
+          {
+            position:relative;
+            top:-200px;
+          }
+          button
+          {
+            background-color:rgba(200, 17, 24, 0.87);
+          }
+          #div{background-color:rgb(249, 250, 253);}
+        </style>
+    </head>
+    <body>
+        <img src="../images/bgimage.jpg" class="bgimage">
+        <h2> View Our Menu<br></h2>
+        <h3>We hold lots of meals for you to enjoy!</h3>
+        <div class="bttn"><!--Clicking on these will take you to that section of the page instead of scrolling down-->
+          <a href="#mwf">Mon, Wed, Fri</a>
+          <a href="#tt">Tue, Thu</a>
+          <a href="#ss">Sat, Sun</a>
+          <a href="#dessert">Everyday Dessert</a>
+        </div>
+        <h4 id="mwf">Monday, Wednesday, Friday:<br><br>
+            <img src="../images/bfmwf.jpg" class="images"><br>
+            <p class="p">Breakfast(6:00am-10:30am)- Pancakes, Bacon, and Eggs (fried or scrambled)</p>
+            <img src="../images/lmwf.jpg" class="images"><br>
+            <p class="p">Lunch(10:30am-5:30pm)- Beef Tacos with Beans, Shredded Cheese, Tomatoes, and Lettuce</p>
+            <img src="../images/dmwf.jpg" class="images"><br>
+            <p class="p">Dinner(5:30pm-10:00pm)- Rigatoni Amatriciana with Amatriciana Sauce, Parmesan Cheese, and Parsley</p>
+        </h4>
+        <div id="div">
+            <fieldset>
+                <form method="post" action="/submit">
+                    Full Name: <input type="text" id="name" placeholder="Enter your full name">
+                    <br>
+                    Phone Number: <input type="text" id="number" placeholder="Enter your phone number">
+                    <br>
+                Please select your meal:
+                <select id="meal">
+                    <option value="">select your meal</option>
+                    <option value="bf">Breakfast: Pancakes-eggs scrambled</option>
+                    <option value="bf">Breakfast: Pancakes-eggs fried</option>
+                    <option value="l">Lunch: Beef Tacos</option>
+                    <option value="d">Dinner: Rigatoni Amatriciana</option>
+                </select><br>
+                Order amount:
+                <select id="amount">
+                    <option value="">select amount</option>
+                    <option value="am">1</option>
+                </select>
+            </fieldset><br>
+            <button onclick="alert('Thank you for ordering! Updates will be communicated through text.');">Submit Order</button>
+            <p class="p">*Note: an order submitted on a day other than Monday/Wednesday/Friday will not be processed
+                <br>*Note: an order submitted past the meal hours will not be processed
+            </p>
+        </div>
+        <h4 id="tt">Tuesday, Thursday:<br><br>
+            <img src="../images/bftt.jpg" class="images"><br>
+            <p class="p">Breakfast(6:00am-10:30am)- Omelette with Potatoes on the side</p>
+            <img src="../images/ltt.jpg" class="images"><br>
+            <p class="p">Lunch(10:30am-5:30pm)- Pepperoni Pizza *with toppings of your liking*</p>
+            <img src="../images/dtt.jpg" class="images"><br>
+            <p class="p">Dinner(5:30pm-10:00pm)- Baked Potato with Cheese, Bacon Pieces, Sour Cream, and Onion</p>
+        </h4><br>
+        <div id="div">
+            <fieldset>
+                Full Name: <input type="text" id="name" placeholder="Enter your full name">
+                    <br>
+                    Phone Number: <input type="text" id="number" placeholder="Enter your phone number">
+                    <br>
+                Please select your meal:
+                <select id="meal">
+                    <option value="">select your meal</option>
+                    <option value="bf">Breakfast: Omelette with potatoes</option>
+                    <option value="l">Lunch: Pepperoni Pizza</option>
+                    <option value="d">Dinner: Baked Potato</option>
+                </select><br>
+                Order amount:
+                <select id="amount">
+                    <option value="">select amount</option>
+                    <option value="am">1</option>
+                </select>
+            </fieldset><br>
+            <button onclick="alert('Thank you for ordering! Updates will be communicated through text.');">Submit Order</button>
+            <p class="p">*Note: an order submitted on a day other than Tuesday/Thursday will not be processed
+                <br>*Note: an order submitted past the meal hours will not be processed
+            </p>
+        </div>
+        <h4 id="ss">Saturday, Sunday:<br><br>
+            <img src="../images/bfss.jpg" class="images"><br>
+            <p class="p">Breakfast(6:00am-10:30am)- Bagle with Egg, Avocado, and Bacon</p>
+            <img src="../images/lss.jpg" class="images"><br>
+            <p class="p">Lunch(10:30am-5:30pm)- Crunchwrap filled with Ground Beef, Cheese, Sour Cream, Lettuce, and Tomatoes</p>
+            <img src="../images/dss.jpg" class="images"><br>
+            <p class="p">Dinner(5:30pm-10:00pm)- Flautas filled with chicken and toppings of Lettuce, Sour Cream, and Queso Fresco</p>
+        </h4><br>
+        <div id="div">
+            <fieldset>
+                Full Name: <input type="text" id="name" placeholder="Enter your full name">
+                    <br>
+                    Phone Number: <input type="text" id="number" placeholder="Enter your phone number">
+                    <br>
+                Please select your meal:
+                <select id="meal">
+                    <option value="">select your meal</option>
+                    <option value="bf">Breakfast: Bagle</option>
+                    <option value="l">Lunch: Crunchwrap</option>
+                    <option value="d">Dinner: Flautas</option>
+                </select><br>
+                Order amount:
+                <select id="amount">
+                    <option value="">select amount</option>
+                    <option value="am">1</option>
+                </select>
+            </fieldset><br>
+            <button onclick="alert('Thank you for ordering! Updates will be communicated through text.');">Submit Order</button>
+            <p class="p">*Note: an order submitted on a day other than Saturday/Sunday will not be processed
+                <br>*Note: an order submitted past the meal hours will not be processed
+            </p>
+        </div>
+        <h4 id="dessert">Everyday Dessert:<br><br>
+            <img src="../images/d1.jpg" class="images"><br>
+            <p class="p">Cheesecake</p>
+            <img src="../images/d2.jpg" class="images"><br>
+            <p class="p">Ice Cream with toppings of your choice</p>
+            <img src="../images/d3.jpg" class="images"><br>
+            <p class="p">Strawberry Jello</p>
+            <img src="../images/d4.jpg" class="images"><br>
+            <p class="p">Chocolate Chip Cookies</p>
+        </h4>
+        <div id="div">
+            <fieldset>
+                Full Name: <input type="text" id="name" placeholder="Enter your full name">
+                    <br>
+                    Phone Number: <input type="text" id="number" placeholder="Enter your phone number">
+                    <br>
+                Please select your meal:
+                <select id="meal">
+                    <option value="">select your meal</option>
+                    <option value="g">Cheesecake</option>
+                    <option value="g">Ice Cream</option>
+                    <option value="g">Strawberry Jello</option>
+                    <option value="g">Chocolate Chip Cookies</option>
+                </select><br>
+                Order amount:
+                <select id="amount">
+                    <option value="">select amount</option>
+                    <option value="am">1</option>
+                </select>
+            </fieldset><br>
+            <button onclick="alert('Thank you for ordering! Updates will be communicated through text.');">Submit Order</button>
+            <p class="p">*Note: desserts are available from lunch time to dinner time(10:30am-10:00pm)
+            </p>
+        </div>
+        <div class="footer"></div>
+    </body>
+</html>
